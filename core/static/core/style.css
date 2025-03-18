@@ -1,0 +1,26 @@
+@import url('https://fonts.cdnfonts.com/css/minecraft-4');
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+body {
+    max-width: 700px;
+    margin: auto;
+    background-color: #7436D1 ;
+    color: #00c8FF ;
+    font-family: Arial;
+}
+
+h1, h2, h3, h4 {
+      font-family: 'Minecraft', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+p {
+
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+}

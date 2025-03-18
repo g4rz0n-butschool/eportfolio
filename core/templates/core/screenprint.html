@@ -1,0 +1,74 @@
+{% load static %}
+
+<!DOCTYPE html>
+<!--
+    Anything you put in between the double-dash arrow symbols shown around
+    this block of text is designated a 'comment' intended for human coders
+    and ignored by the computer. The top "<!DOCTYPE html>" line of code
+    declares that this text file is to be interpreted as HTML code.
+-->
+
+<html lang=en>
+<!--
+    This opening tag marks the start of the html code.  Everything below
+    until the </html> closing tag is part of this element. "lang" is an
+    attribute defining the language of the website. The value "en"
+    indicates this site is written in English. We indent the content
+    inside an element to make it easier for people to read and understand.
+-->
+
+    <head>
+    <!--Code *about* the website, NOT displayed in the browser window.-->
+
+        <meta charset="UTF-8"> <!--Sets site to use standard characters.-->
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Sizes your site to the visitor's screen size -->
+
+        <meta name="author" content="Your Name">
+        <!--
+            Some tags like "meta" are self-closing. They have "attributes"
+            but no inner content and they don't need or use a closing tag.
+        -->
+
+        <title>Mr. Coco Man</title>
+        <!--The 'title' is what's displayed in the browser tab.-->
+
+        <link rel="stylesheet" href="{% static 'core/style.css' %}">
+        <!--
+            HTML (HyperText Markup Language) code is for the website
+            content. CSS (Cascading Style Sheets) code is for the website
+            style. The line above tells the browser the file location and
+            file name to find this code that you'll write/edit there.
+        -->
+
+    </head>
+
+    <body> <!--Everything to be displayed in the browser window.-->
+
+        <h1>Screenprinting Project</h1>
+        <h3>project: mr. coco man</h3>
+        <img src="{% static 'core/manbutcool.png' %}" alt="photoshop design for my artwork" width="250">
+
+        <h2>Intro</h2>
+        <p>In New Media and Tech, we learn and apply a few technological and design skills. We work in groups to make digital and physical art, while applying theories of social behavior to make experiences that would have an impact.</p>
+
+        <h2>Project</h2>
+        <h3>Photos</h3>
+        <img src="{% static 'core/coco.jpg'  %}" alt="coco" width=250 >
+        <img src="{% static 'core/chest.JPG'  %}" alt="torso image used" width=350>
+        <p>To begin the screenprinting project, everyone first started by learning how to use the cameras to their full potential using their manual settings. Settings such as; exposure, aperture, and shutter speed. Once I was happy with my pictures, I imported them into Photoshop.</p>
+
+        <h3>Photoshop</h3>
+        <img src="{% static 'core/photoshop.png' %}" alt="the photoshop software" width=500>
+        <p>When everything was imported to Photoshop, Mr. Sinusas taught everyone how to use the software. He taught us how to curve the text around and how to change the colors of the image. That was one of the more fun parts of this whole project. I was able to mess with the layers of the image to make it perfect.</p>
+    <h3>Screenprinting and Final Results</h3>
+            <img src="{% static 'core/process.JPG' %}" alt="screenrpinting" width=150>
+              <img src="{% static 'core/printing2.JPG' %}" alt="screenrpinting" width=250>
+                <img src="{% static 'core/printing.JPG' %}" alt="screenrpinting" width=250>
+<p>Saving the best for last, here is the screenprinting stage. Everyone needed to export their image, with different layers if they used multiple colors. Then a vinyl cutter was used to cut said images into a piece of vinyl. Then we had to take the cut pieces off of the vinyl and put the rest on a frame. Everyone melted the vinyl and then the actual screenprinting began. I mixed some blue and green with a hint of yellow to make a tealish color. The other color was used with blue and red, which made a dark purple color. I was able to practice on paper, then a piece of cloth, and finally a shirt of my own.</p>
+   <img src="{% static 'core/prints.JPG' %}" alt="final prints" width=250>
+   <h2>21st Century Compentencies</h2>
+   <p>From this whole project and all of the 21st century compentencies, I feel like I focused more about initiative, self-direction, and accountability. I took responsibility for my own learning by coming into office hours to finish this website.</p>
+    </body>
+</html>
